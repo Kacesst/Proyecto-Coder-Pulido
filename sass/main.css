@@ -1,0 +1,198 @@
+h3 {
+  color: white;
+  background-color: black;
+}
+
+.heading-1 {
+  font-size: 12px;
+}
+
+.heading-2 {
+  font-size: 24px;
+}
+
+.heading-3 {
+  font-size: 36px;
+}
+
+.heading-4 {
+  font-size: 48px;
+}
+
+.heading-5 {
+  font-size: 60px;
+}
+
+.heading-6 {
+  font-size: 72px;
+}
+
+.heading-7 {
+  font-size: 84px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3333333333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 16.6666666667%;
+}
+
+.col-7 {
+  width: 14.2857142857%;
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+.col-9 {
+  width: 11.1111111111%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-11 {
+  width: 9.0909090909%;
+}
+
+/*each*/
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-tomato {
+  background-color: tomato;
+}
+
+/* MAPS*/
+.icon-twitter {
+  color: skyblue;
+}
+
+.icon-fb {
+  color: blue;
+}
+
+.icon-ig {
+  color: blueviolet;
+}
+
+.icon-tiktok {
+  color: black;
+}
+
+.icon-twitch {
+  color: rgb(132, 0, 255);
+}
+
+.titulos-h1 {
+  font-size: 48px;
+}
+
+.titulos-h2 {
+  font-size: 36px;
+}
+
+.titulos-h3 {
+  font-size: 24px;
+}
+
+.color-muestra {
+  padding: 20px;
+  background: darkgrey;
+}
+
+/* extend*/
+.box__text, .box__text--right, .box__text--center {
+  background: aquamarine;
+  color: black;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.box__text--center {
+  text-align: center;
+}
+
+.box__text--right {
+  text-align: right;
+}
+
+.btn-danger {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  background-color: red;
+  color: white;
+}
+
+.btninfo {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+}
+
+.btnAlert {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  color: green;
+  background: skyblue;
+} /*# sourceMappingURL=main.css.map */
