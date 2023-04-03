@@ -1,48 +1,10 @@
  
- 
+ @use 'header';
 
  body{
     background-image: linear-gradient(to right,#d53b45 , #a54690)}
 
-   header {padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            background-image: linear-gradient(to  right ,#000 ,#d53b45 , #a54690, rgb(0, 0, 0));}
 
-    .topheader{ 
-            display: flex;
-            justify-content:flex-end;}
-
-    .logo{display: flex;
-        align-items: center;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 50%; }
-
-
-        header nav ul {
-        list-style: none;
-        grid-row: 1;
-        background: to right #a54690, #ab83d4;
-        padding: 0px;
-        margin:0;
-        display:flex;
-        text-decoration: solid;
-        border-radius: 5px;
-        font-size: 2em;
-        list-style: none;
-        color: rgba(255, 255, 255, 0);
-        line-height: 50px;
-        
-        }
-        header section { padding-left:2px;}
-    
-        header nav ul li {
-            margin-right: 10px;
-            padding-left: 40px;
-            font-style: italic;
-            content: icon;
-        }
         
 
 .description {
@@ -70,13 +32,6 @@ p {
         grid: 0;
         grid-row: 2;
         display: contents
-    }
-
-
-     .topheader ul { 
-            display: flexbox;
-            flex-flow: column 2;
-        
     }
  
     .Spotify {
@@ -114,7 +69,7 @@ p {
     padding: 10px;
 }
 
-user agent stylesheet
+
 footer {background-image: linear-gradient(to bottom right,#d53b45 , #a54690);
     display: block;
 }
@@ -139,12 +94,7 @@ footer {background-image: linear-gradient(to bottom right,#d53b45 , #a54690);
                 cursor: pointer;
                 text-decoration: underline;}
 
-.ul li a {
-                color: var(--color-tertiary);
-                font-size: 25px;
-                text-decoration: none;
-                background-color: transparent;
-            }
+
 .nav-footer {
                 text-align: center;
                 align-items: center;
@@ -198,22 +148,10 @@ footer {background-image: linear-gradient(to bottom right,#d53b45 , #a54690);
   }
 
   
-  .banner {
-    
-    display: flex;
-             align-items{ center
-             justify-content{ center{
-    background-image: url('./imagenes/banner.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: -1;
-  }
+
   
   .content { 
-    position: absolute;
+    position: fixed;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -221,25 +159,18 @@ footer {background-image: linear-gradient(to bottom right,#d53b45 , #a54690);
     color: white;
     padding-right: 50px;
     width: 50%; 
-    
-
-
-  }
+    }
   table {
     padding-right: auto;
     border-collapse: collapse;
   }
   
   td {
-    border: 1px solid black;
-    padding: 10px
-  }
+    border: 1px solid black {
+    padding: 10px }}}
+  
 
-  @media 
-        screen and (max-width: 480px) ,
-        screen and (min-width: 481px) and (max-width: 768px),
-        screen and (min-width: 769px),
-        screen and (min-width: 1024px){}}}}}
+
 
      
 

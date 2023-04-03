@@ -1,52 +1,96 @@
-body {
-  background-image: linear-gradient(to right, #d53b45, #a54690);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-header {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  background-image: linear-gradient(to right, #000, #d53b45, #a54690, rgb(0, 0, 0));
-}
-
-.topheader {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.logo {
+* header {
   display: flex;
   align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 50%;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: linear-gradient(to bottom, #000, #d53b45, #a54690, #000);
 }
-
-header nav ul {
+* .logo {
+  max-width: 5rem;
+}
+* h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 0 10px;
+}
+* .nav-list {
   list-style: none;
-  grid-row: 1;
-  background: to right #a54690, #ab83d4;
-  padding: 0px;
-  margin: 0;
   display: flex;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  border-radius: 5px;
-  font-size: 2em;
-  list-style: none;
-  color: rgba(255, 255, 255, 0);
-  line-height: 50px;
+  gap: 1rem;
+}
+* .nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+* nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+* nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+* .abrir-menu,
+* .cerrar-menu {
+  display: none;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 769px) {
+  * .abrir-menu,
+  * .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  * .abrir-menu {
+    color: #1c1c1c;
+  }
+  * .cerrar-menu {
+    color: #ececec;
+  }
+  * .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: initial;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  * .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  * .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  * .nav-list li a {
+    color: rgba(236, 236, 236, 0.9254901961);
+  }
 }
 
-header section {
-  padding-left: 2px;
-}
-
-header nav ul li {
-  margin-right: 10px;
-  padding-left: 40px;
-  font-style: italic;
-  content: icon;
+body {
+  background-image: linear-gradient(to right, #d53b45, #a54690);
 }
 
 .description {
@@ -69,10 +113,6 @@ header nav ul li {
   grid: 0;
   grid-row: 2;
   display: contents;
-}
-.description .topheader ul {
-  display: flexbox;
-  flex-flow: column 2;
 }
 .description .Spotify {
   width: 100%;
@@ -101,7 +141,7 @@ header nav ul li {
   grid-row: 3;
   padding: 10px;
 }
-.description user agent stylesheet footer {
+.description footer {
   background-image: linear-gradient(to bottom right, #d53b45, #a54690);
   display: block;
 }
@@ -121,12 +161,6 @@ header nav ul li {
   color: -webkit-link;
   cursor: pointer;
   text-decoration: underline;
-}
-.description .ul li a {
-  color: var(--color-tertiary);
-  font-size: 25px;
-  text-decoration: none;
-  background-color: transparent;
 }
 .description .nav-footer {
   text-align: center;
@@ -172,20 +206,8 @@ header nav ul li {
   -webkit-overflow-scrolling: touch;
   scale: 66%;
 }
-.description .banner {
-  display: flex;
-}
-.description .banner align-items center justify-content center {
-  background-image: url("./imagenes/banner.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  z-index: -1;
-}
-.description .banner align-items center justify-content .content {
-  position: absolute;
+.description .content {
+  position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -194,11 +216,11 @@ header nav ul li {
   padding-right: 50px;
   width: 50%;
 }
-.description .banner align-items center justify-content table {
+.description table {
   padding-right: auto;
   border-collapse: collapse;
 }
-.description .banner align-items center justify-content td {
+.description td {
   border: 1px solid black;
-  padding: 10px;
+  border-padding: 10px;
 }/*# sourceMappingURL=style.css.map */
