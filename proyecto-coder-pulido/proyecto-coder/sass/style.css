@@ -4,9 +4,16 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body{
-  background-image: linear-gradient(to  right ,#000 ,#d53b45 , #a54690, rgb(0, 0, 0) )
- }
+body[data-fondo="kacelong"]{
+  background-image: url('../imagenes/bannernomobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+
+
  
 * header {
   display: flex;
@@ -18,6 +25,14 @@ body{
 * .logo {
   max-width: 5rem;
 }
+
+.asides{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175vh;
+}
+
 * h1 {
   color: #fff;
   font-size: 24px;
@@ -51,6 +66,18 @@ body{
   margin-right: 1rem;
 }
 
+.spotify-container{
+  max-width: 600px;
+  max-height: 300px;
+  position: relative;
+  padding-bottom: 666px;
+}
+.twitter-container{
+  max-width: 600px;
+  max-height: 500px;
+  overflow: hidden;
+
+}
 
 .container h3 {
   font-family: sans-serif;
@@ -86,13 +113,14 @@ body{
 }
 
 footer {
+  position: relative;
   background-color: #000;
   color: #fff;
-  padding: 40px 0;
+
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1040px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -132,6 +160,32 @@ footer {
   color: #a54690;
   font-size: 24px;
 }
+
+.cv {  display: flex;
+  scale: 1.1;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 20px;
+ 
+}
+
+.row{
+  margin: 150px;
+  max-width: 40%;
+  display: inline-block; 
+  background-color:wheat; 
+  border: 6px solid #333; 
+  padding: 10px; 
+  text-align: center;
+  line-height: 2em;
+}
+.row img td{
+  flex-direction: column;
+  columns:2;
+}
+
 
 
 .description {
@@ -266,11 +320,17 @@ footer {
   padding: 10px;
   
 }
-.card {
-  background-image: url(../imagenes/banner.png);
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: center;
+.contact { 
+  size: 700px;
+}
+.card {    
+  margin: 100px auto;
+  position: relative;
+  display: list-item;
+  max-width: 100%;
+  text-align: right;
+  padding-left: 220px;
+  padding: 15px;
   
 }
 
@@ -278,11 +338,12 @@ footer {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
+  padding: 5px;
 }
 
 .card-text {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 85px;
 
 }
 
@@ -339,5 +400,22 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 769px) {
+  .cv {
+      display: flex;  
+      columns: 3;
+      }
+  .cv img {margin: auto;
+      visibility: hidden;
+        width: 100%;
+  
+    
+  }
 
+  .spotter{
+    visibility: hidden;
+  }
+
+  
+}
 

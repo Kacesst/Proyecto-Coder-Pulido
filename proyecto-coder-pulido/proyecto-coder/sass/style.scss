@@ -1,4 +1,5 @@
- 
+
+ @use 'ejemplo';
  @use 'header'; 
  @use 'contacto';
  @use 'carousel';
@@ -122,21 +123,14 @@ footer {background-image: linear-gradient(to bottom right,#d53b45 , #a54690);
 
   
 
-.row{position: relative;
-    border: 3px solid 
-    padding: 5px;
-    margin: 10px; 
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: space-between;
-
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.col{
-    background-color:#a54690 , #ab83d4;
-    color: white;
-    font-size: 50px;
-    border: 3px solid black , #ab83d4;
+
 }
 
 .image-container {
